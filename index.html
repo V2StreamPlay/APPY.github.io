@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Home Feed</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- PyScript CDN (2025.8.1) -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    
+</head>
+<body>
+    <h1>Public Home Feed</h1>
+    
+    <!-- Post Form -->
+    <form id="post-form">
+        <input type="text" id="username" placeholder="Your name (optional)" maxlength="20">
+        <textarea id="post-text" placeholder="What's on your mind? (e.g., Hello world!)" rows="3" maxlength="140"></textarea>
+        <br>
+        <button type="button" py-click="add_post">Post to Feed</button>
+    </form>
+    
+    <!-- Home Feed Display -->
+    <h2>Feed</h2>
+    <ul id="feed-list"></ul>
+    
+    <!-- Loads Python script -->
+    <py-script src="./feed_script.py"></py-script>
+</body>
+</html>
