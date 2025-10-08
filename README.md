@@ -1,1 +1,1 @@
-# APPY.github.io
+# appy.github.io
